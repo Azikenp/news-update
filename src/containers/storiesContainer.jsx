@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import { getStoryIds, getStory } from "../services/hnApi";
+import { getStoryIds } from "../services/hnApi";
+import Story from "../components/Story";
 
 function StoriesContainer() {
     const [storyIds, setStoryIds] = useState([]);
@@ -10,7 +11,9 @@ function StoriesContainer() {
 
 
     return (
-      <div>{JSON.stringify(storyIds)}</div>
+      storyIds.map(storyId => (
+        <Story key={storyId} storyId={storyId} />
+      ))
     )
   }
   
