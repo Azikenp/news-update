@@ -7,7 +7,7 @@ function StoriesContainer() {
 
     useEffect(() => {
         getStoryIds().then(data => setStoryIds(data))
-    }, [])
+    }, []);
 
 
     return (
@@ -17,4 +17,4 @@ function StoriesContainer() {
     )
   }
   
-  export default StoriesContainer
+  export default StoriesContainer;

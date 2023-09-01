@@ -1,12 +1,10 @@
-import React from 'react'
-import StoriesContainer from './containers/storiesContainer'
+import React from "react";
+import StoriesContainer from "./containers/storiesContainer";
 
 function App() {
   return (
-    <>
-      <p><StoriesContainer /></p>
-    </>
-  )
+    <StoriesContainer />
+  );
 }
 
-export default App
+export default App;
