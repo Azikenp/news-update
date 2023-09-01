@@ -19,9 +19,11 @@ function Story({ storyId }) {
         <span className="story__by" data-testid='story-by'>
           <StoryMetaElement color="#000">By: </StoryMetaElement> {story.by}
         </span>
-      </StoryMeta>
 
-      Posted: <p>{story.time}</p>
+        <span className="story__time" data-testid='story-time'>
+          <StoryMetaElement color="#000">Posted: </StoryMetaElement> {story.time}
+        </span>
+      </StoryMeta>
     </StoryWrapper>
   ) : null;
 }
