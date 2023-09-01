@@ -1,10 +1,11 @@
-import React from "react";
-import StoriesContainer from "./containers/storiesContainer";
+import React, {useState, useEffect} from 'react'
 
 function App() {
+  const [storyIds, setStoryIds] = useState([]);
+
   return (
-    <StoriesContainer />
-  );
+    <p>hello</p>
+  )
 }
 
-export default App;
+export default App
