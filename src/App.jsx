@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import StoriesContainer from './containers/storiesContainer';
 
 function App() {
