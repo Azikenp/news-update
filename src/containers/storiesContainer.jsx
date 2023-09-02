@@ -9,7 +9,6 @@ import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
 
 function StoriesContainer() {
   const [storyIds, setStoryIds] = useState([]);
-  const test = useInfiniteScroll();
 
 
   useEffect(() => {
