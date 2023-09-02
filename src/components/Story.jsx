@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { getStory } from "../services/hnApi";
 import { StoryWrapper, StoryTitle, StoryMeta, StoryMetaElement } from "../styles/StoryStyles";
 import { mapTime } from "../mappers/mapTime";
 
-function Story({ storyId }) {
+export const Story = memo(function Story({ storyId }) {
   const [story, setStory] = useState({});
 
   useEffect(() => {
@@ -27,6 +27,5 @@ function Story({ storyId }) {
       </StoryMeta>
     </StoryWrapper>
   ) : null;
-}
+});
 
-export default Story;
